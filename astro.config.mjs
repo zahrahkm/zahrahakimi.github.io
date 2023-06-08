@@ -3,7 +3,7 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://github.com/zahrahkm.github.io',
+  site: 'https://zahrahakimi.github.io',
   base: '/zahrahakimi.github.io',
 });
 
