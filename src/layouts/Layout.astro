@@ -1,0 +1,47 @@
+---
+import Card from '../components/Card.astro';
+import NavbarMenu from '../components/NavbarMenu.astro';
+import Contact from '../pages/Contact.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+
+        <meta name="keywords"
+              content="Zahra Hakimi, Asiabar, software developer, front end developer , iranaian, mobile, web, زهرا حکیمی آسیابر , زهرا حکیمی"/>
+        <meta name="description" content="Zahra Hakimi - Front-end developer"/>
+        <meta name="author" content="Zahra Hakimi"/>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+        <title>Zahra Hakimi</title>
+        <meta name="title" content="Zahra Hakimi"/>
+
+		<link rel="icon" type="image/png" sizes="128x128" href="icons/z128x128.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="icons/z96x96.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/z32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/z16x16.png">
+
+		<title>Zahra Hakimi</title>
+        <NavbarMenu></NavbarMenu>
+	</head>
+	<body>
+		<slot />
+	</body>
+	<Contact/>
+</html>
+<style is:global>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #F6F6F6;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+</style>
